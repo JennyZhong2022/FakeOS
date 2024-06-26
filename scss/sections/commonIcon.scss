@@ -1,0 +1,16 @@
+.common-icons{
+  margin-top: 0.5rem;
+  ul{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    list-style-type: none;
+    li{
+      img{
+        display: block;
+        margin: 0 auto;
+        height: 10vh;
+      }
+    }
+  }
+}

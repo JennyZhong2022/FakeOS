@@ -1,0 +1,22 @@
+@use './sections/top.scss';
+@use './sections/input.scss';
+@use './sections/mainPart.scss';
+@use './sections/commonIcon.scss';
+@use './sections/bottomSymbol.scss';
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  background-image: url('../src/backgroundImg/pexels-padrinan-255379.jpg'); 
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-position: center; 
+  margin: 0; 
+  padding: 0; 
+}
+

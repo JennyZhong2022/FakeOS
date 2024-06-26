@@ -1,0 +1,20 @@
+.bottom{
+  background-color: black;
+  margin-top: 0.3rem;
+  color: rgb(181, 210, 242);
+  padding: 1rem 2rem; 
+  height: 3vh; 
+  ul{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    list-style-type: none;
+    li{
+      img{
+        display: block;
+        margin: 0 auto;
+        height: 4vh;
+      }
+    }
+  }
+}
