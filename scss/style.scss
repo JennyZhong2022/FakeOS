@@ -3,6 +3,8 @@
 @use './sections/mainPart.scss';
 @use './sections/commonIcon.scss';
 @use './sections/bottomSymbol.scss';
+@use './sections/iconContentDisplay.scss';
+
 
 
 *{
@@ -29,4 +31,8 @@ body {
 main {
   flex-grow: 1; /* Ensure main takes up the remaining space */
   overflow-y: auto; /* Allow scrolling if content overflows */
+}
+
+.noDisplay{
+   display: none;
 }

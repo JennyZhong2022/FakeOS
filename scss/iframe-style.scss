@@ -1,0 +1,38 @@
+
+$message-text-color: #3c3333;
+$date-text-color:  rgb(124, 108, 108);
+
+    .message-body{
+      font-family: Arial, sans-serif;
+      .message-h1{
+        text-align:left;
+        padding: 10px;
+      }
+      .message-ul {
+        list-style-type: none;
+        padding: 0;
+        .message-li {
+          display: flex;
+          align-items: center;
+          padding: 10px;
+          // border-bottom: 1px solid #ddd;
+          .message-img {
+            border-radius: 50%;
+            margin-right: 10px;
+          }
+          h4 {
+            margin: 0 10px 0 0;
+            font-size: 1.2em;
+          }
+          .message-text {
+            margin: 0;
+            color: $message-text-color;
+          }
+          .message-date {
+            margin: 0;
+            color: $date-text-color
+          }
+        }
+      }
+      }
+    

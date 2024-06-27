@@ -1,0 +1,8 @@
+@use '../partials/mixins';
+
+.content-display {
+  @include mixins.common-styles
+}
+.message-display{
+  @include mixins.common-styles
+}
