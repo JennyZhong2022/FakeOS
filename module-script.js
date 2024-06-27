@@ -32,13 +32,17 @@ weatherIcon.addEventListener('click', (e) => {
   contentDisplay.classList.remove('noDisplay')
 })
 
-backArrow.addEventListener('click', (e) => {
-  e.preventDefault()
-  console.log('back');
-  mainSection.classList.remove('noDisplay')
-  contentDisplay.classList.add('noDisplay')
-  messageDisplay.classList.add('noDisplay')
-})
+// backArrow.addEventListener('click', (e) => {
+//   e.preventDefault()
+//   console.log('back');
+//   mainSection.classList.remove('noDisplay')
+//   contentDisplay.classList.add('noDisplay')
+//   messageDisplay.classList.add('noDisplay')
+// })
+
+
+
+
 
 
 

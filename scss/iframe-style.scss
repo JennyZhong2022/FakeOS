@@ -34,5 +34,18 @@ $date-text-color:  rgb(124, 108, 108);
           }
         }
       }
+      .message-display {
+        margin-top: 20px;
+        border-top: 1px solid #ddd;
+        font-size: 1.1em;
+        color: #3c3333;
+        padding: 20px;
+     
+      }
       }
     
+
+      .hidden {
+        display: none;
+      }
+      
