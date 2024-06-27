@@ -3,7 +3,12 @@
   margin-top: 0.3rem;
   color: rgb(181, 210, 242);
   padding: 1rem 2rem; 
-  height: 3vh; 
+  height: 4vh;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
   ul{
     display: flex;
     justify-content:space-around;

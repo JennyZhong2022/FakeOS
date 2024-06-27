@@ -2,6 +2,7 @@
   background-color: black;
   color: rgb(181, 210, 242);
   padding: 0.2rem 0.5rem;
+  height: 3vh;
 }
 .top ul {
   width: 97vw;
@@ -69,6 +70,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-grow: 1; /* Make main part take up remaining space */
 }
 .main-part ul {
   display: grid;
@@ -116,12 +118,16 @@
 }
 
 .bottom {
-  position: fixed;
   background-color: black;
   margin-top: 0.3rem;
   color: rgb(181, 210, 242);
   padding: 1rem 2rem;
-  height: 3vh;
+  height: 4vh;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
 }
 .bottom ul {
   display: flex;
@@ -140,11 +146,24 @@
   padding: 0;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-image: url("../src/backgroundImg/pexels-padrinan-255379.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1; /* Ensure main takes up the remaining space */
+  overflow-y: auto; /* Allow scrolling if content overflows */
 }
 
 /*# sourceMappingURL=style.css.map */

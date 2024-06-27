@@ -8,11 +8,13 @@ const amazonIcon=document.querySelector('.amazonIcon')
 
 timeDisplay.textContent = currentTime()
 
-weatherIcon.addEventListener('click', () => {
+weatherIcon.addEventListener('click', (e) => {
+  e.preventDefault()
   weatherDisplay()
 })
 
 
-amazonIcon.addEventListener('click', () => {
+amazonIcon.addEventListener('click', (e) => {
+  e.preventDefault()
   amazonDisplay()
 })

@@ -1,5 +1,6 @@
 const weatherDisplay = () => {
-   window.location.href='https://www.weatherzone.com.au/vic/melbourne/melbourne'
+   window.open ('https://www.weatherzone.com.au/vic/melbourne/melbourne')
+   console.log('go weather');
 }
 
 export default weatherDisplay

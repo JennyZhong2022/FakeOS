@@ -4,13 +4,12 @@ $border-color: #ccc;
   display:flex;
   justify-content: center;
   align-items: center; 
+  flex-grow: 1; /* Make main part take up remaining space */
   ul{ 
     display: grid;
     grid-template-columns: repeat(4, minmax(100px , 1fr));
     gap: 2rem 0;
-    // padding: 1rem 3rem;
-    // padding: 1rem 1.5rem;
-    // justify-items: center;
+    
     
     list-style-type: none;
     li{
