@@ -116,6 +116,7 @@
 }
 
 .bottom {
+  position: fixed;
   background-color: black;
   margin-top: 0.3rem;
   color: rgb(181, 210, 242);
@@ -144,8 +145,6 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  margin: 0;
-  padding: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
