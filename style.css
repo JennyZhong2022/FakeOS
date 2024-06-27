@@ -3,6 +3,11 @@
   color: rgb(181, 210, 242);
   padding: 0.2rem 0.5rem;
   height: 4vh;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 1000;
 }
 .top ul {
   width: 97vw;
@@ -167,6 +172,55 @@
   border: none;
 }
 
+.message-body {
+  margin-top: 2.5rem;
+  font-family: Arial, sans-serif;
+}
+.message-body .message-h1 {
+  text-align: left;
+  padding: 10px;
+}
+.message-body .message-ul {
+  list-style-type: none;
+  padding: 0;
+}
+.message-body .message-ul .message-li {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+.message-body .message-ul .message-li .message-img {
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.message-body .message-ul .message-li h4 {
+  margin: 0 10px 0 0;
+  font-size: 1.2em;
+}
+.message-body .message-ul .message-li .message-text {
+  margin: 0;
+  color: #3c3333;
+}
+.message-body .message-ul .message-li .message-date {
+  margin: 0;
+  color: rgb(124, 108, 108);
+}
+.message-body #message-data-display {
+  margin-top: 2rem;
+  border-top: 1px solid #ddd;
+  font-size: 1.1em;
+  color: #3c3333;
+  text-indent: 1rem;
+  text-align: inherit;
+}
+.message-body #message-data-display > *:first-child {
+  margin-top: 2rem;
+}
+
+.hidden {
+  display: none;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -188,6 +242,7 @@ body {
 }
 
 main {
+  margin-top: 2.5rem;
   flex-grow: 1; /* Ensure main takes up the remaining space */
   overflow-y: auto; /* Allow scrolling if content overflows */
 }

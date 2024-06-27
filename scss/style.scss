@@ -4,6 +4,7 @@
 @use './sections/commonIcon.scss';
 @use './sections/bottomSymbol.scss';
 @use './sections/iconContentDisplay.scss';
+@use './sections/messageDisplay.scss';
 
 
 
@@ -29,6 +30,7 @@ body {
 }
 
 main {
+  margin-top: 2.5rem;
   flex-grow: 1; /* Ensure main takes up the remaining space */
   overflow-y: auto; /* Allow scrolling if content overflows */
 }
