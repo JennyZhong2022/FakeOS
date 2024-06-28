@@ -8,7 +8,7 @@ export const contentFrame=document.querySelector('#content-frame')
 
 const timeDisplay = document.querySelector('.time');
 const weatherIcon = document.querySelector('.weatherIcon');
-const amazonIcon = document.querySelector('.amazonIcon');
+// const amazonIcon = document.querySelector('.amazonIcon');
 const messageIcon = document.querySelector('.messageIcon');
 const backArrow = document.querySelector('.back-symbol');
 const mainSection = document.querySelector('.main-section');
