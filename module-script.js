@@ -29,6 +29,7 @@ weatherIcon.addEventListener('click', (e) => {
   weatherDisplay()
   mainSection.classList.add('noDisplay')
   contentDisplay.classList.remove('noDisplay')
+  console.log('weather');
 })
 
 // below doesn't work 
@@ -55,6 +56,8 @@ messageIcon.addEventListener('click', (e) => {
   isViewingMessageList = true;
 });
 
+
+
 // Event listeners for message list items
 const messageItems = document.querySelectorAll('.message-li');
 messageItems.forEach(item => {
@@ -65,6 +68,8 @@ messageItems.forEach(item => {
     messageDisplay.classList.remove('hidden');
   });
 });
+
+
 
 // Event listener for backArrow
 backArrow.addEventListener('click', (e) => {
