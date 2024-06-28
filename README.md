@@ -1,7 +1,8 @@
 # FakeOS
 
 ## Introduction
-FakeOS is a simple web-based mock operating system interface designed to mimic the look and feel of a **mobile device's home screen**. It includes various icons, a search input, back arrow function, and a message display section.
+FakeOS is a simple web-based mock operating system interface designed to mimic the look and feel of a **mobile device's home screen**. It includes various icons, a search input, back arrow function, and a message display section.It is deployed to gitHub Pages, please use a phone to view it or use the phone version on a webpage: [FakeOS](https://jennyzhong2022.github.io/FakeOS/).
+
 
 ## Features
 - **Top Section**: Icons for phone signal, WiFi, Bluetooth, battery, and dynamic real-time display.
