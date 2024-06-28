@@ -51,8 +51,8 @@ messageIcon.addEventListener('click', (e) => {
   mainSection.classList.add('noDisplay');
   contentDisplay.classList.add('noDisplay');
   messageDisplaySection.classList.remove('noDisplay');
-  messageList.classList.remove('hidden');
-  messageDisplay.classList.add('hidden');
+  messageList.classList.remove('noDisplay');
+  messageDisplay.classList.add('noDisplay');
   isViewingMessageList = true;
 });
 
@@ -64,8 +64,8 @@ messageItems.forEach(item => {
   item.addEventListener('click', () => {
     const messageContent = item.getAttribute('data-message');
     messageDisplay.innerHTML = `<p>${messageContent}</p>`;
-    messageList.classList.add('hidden');
-    messageDisplay.classList.remove('hidden');
+    messageList.classList.add('noDisplay');
+    messageDisplay.classList.remove('noDisplay');
   });
 });
 
@@ -75,17 +75,17 @@ messageItems.forEach(item => {
 backArrow.addEventListener('click', (e) => {
   e.preventDefault();
   if (isViewingMessageList) {
-    if (messageDisplay.classList.contains('hidden')) {
+    if (messageDisplay.classList.contains('noDisplay')) {
       // If viewing message list, go back to home page
       mainSection.classList.remove('noDisplay');
       contentDisplay.classList.add('noDisplay');
       messageDisplaySection.classList.add('noDisplay');
-      messageList.classList.add('hidden');
+      messageList.classList.add('noDisplay');
       isViewingMessageList = false;
     } else {
       // If viewing message details, go back to message list
-      messageDisplay.classList.add('hidden');
-      messageList.classList.remove('hidden');
+      messageDisplay.classList.add('noDisplay');
+      messageList.classList.remove('noDisplay');
     }
   } else {
     // Default behavior if not viewing message list or details
