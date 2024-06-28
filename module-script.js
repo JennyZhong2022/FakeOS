@@ -35,12 +35,12 @@ weatherIcon.addEventListener('click', (e) => {
 // below doesn't work 
 // chrome-error://chromewebdata/:1 Refused to display 'https://www.ebay.com.au/' in a frame because it set 'X-Frame-Options' to 'sameorigin'. 
 
-amazonIcon.addEventListener('click', (e) => {
-  e.preventDefault()
-  amazonDisplay()
-  mainSection.classList.add('noDisplay')
-  contentDisplay.classList.remove('noDisplay')
-})
+// amazonIcon.addEventListener('click', (e) => {
+//   e.preventDefault()
+//   amazonDisplay()
+//   mainSection.classList.add('noDisplay')
+//   contentDisplay.classList.remove('noDisplay')
+// })
 
 
 
