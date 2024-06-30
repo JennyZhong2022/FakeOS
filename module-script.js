@@ -1,6 +1,6 @@
 import currentTime from './modules/top.js'
 import { weatherDisplay, amazonDisplay } from './modules/iconContentDisplay.js'
-// import { loadIframeContent } from './modules/messageDisplay.js';
+
 
 
 
@@ -15,7 +15,8 @@ const mainSection = document.querySelector('.main-section');
 const contentDisplay = document.querySelector('.content-display');
 const messageDisplaySection = document.querySelector('.message-display');
 const messageList = document.querySelector('.message-ul');
-const messageDisplay = document.getElementById('message-data-display');
+const messageDataDisplay = document.getElementById('message-data-display');
+const messageItems = document.querySelectorAll('.message-li');
 
 let isViewingMessageList = false;
 
@@ -51,21 +52,20 @@ messageIcon.addEventListener('click', (e) => {
   mainSection.classList.add('noDisplay');
   contentDisplay.classList.add('noDisplay');
   messageDisplaySection.classList.remove('noDisplay');
-  messageList.classList.remove('noDisplay');
-  messageDisplay.classList.add('noDisplay');
+  messageDataDisplay.classList.add('noDisplay');
   isViewingMessageList = true;
 });
 
 
 
 // Event listeners for message list items
-const messageItems = document.querySelectorAll('.message-li');
+
 messageItems.forEach(item => {
   item.addEventListener('click', () => {
     const messageContent = item.getAttribute('data-message');
-    messageDisplay.innerHTML = `<p>${messageContent}</p>`;
+    messageDataDisplay.innerHTML = `<p>${messageContent}</p>`;
     messageList.classList.add('noDisplay');
-    messageDisplay.classList.remove('noDisplay');
+    messageDataDisplay.classList.remove('noDisplay');
   });
 });
 
@@ -75,20 +75,19 @@ messageItems.forEach(item => {
 backArrow.addEventListener('click', (e) => {
   e.preventDefault();
   if (isViewingMessageList) {
-    if (messageDisplay.classList.contains('noDisplay')) {
+    if (messageDataDisplay.classList.contains('noDisplay')) {
       // If viewing message list, go back to home page
       mainSection.classList.remove('noDisplay');
       contentDisplay.classList.add('noDisplay');
       messageDisplaySection.classList.add('noDisplay');
-      messageList.classList.add('noDisplay');
       isViewingMessageList = false;
     } else {
       // If viewing message details, go back to message list
-      messageDisplay.classList.add('noDisplay');
+      messageDataDisplay.classList.add('noDisplay');
       messageList.classList.remove('noDisplay');
     }
   } else {
-    // Default behavior if not viewing message list or details
+    // Default behavior if not viewing message list or details, back to home page
     mainSection.classList.remove('noDisplay');
     contentDisplay.classList.add('noDisplay');
     messageDisplaySection.classList.add('noDisplay');

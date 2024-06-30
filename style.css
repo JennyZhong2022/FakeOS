@@ -174,39 +174,39 @@
   border: none;
 }
 
-.message-body {
+.message-display {
   font-family: Arial, sans-serif;
 }
-.message-body .message-h1 {
+.message-display .message-h1 {
   text-align: left;
   padding: 10px;
 }
-.message-body .message-ul {
+.message-display .message-ul {
   list-style-type: none;
   padding: 0;
 }
-.message-body .message-ul .message-li {
+.message-display .message-ul .message-li {
   display: flex;
   align-items: center;
   padding: 10px;
 }
-.message-body .message-ul .message-li .message-img {
+.message-display .message-ul .message-li .message-img {
   border-radius: 50%;
   margin-right: 10px;
 }
-.message-body .message-ul .message-li h4 {
+.message-display .message-ul .message-li h4 {
   margin: 0 10px 0 0;
   font-size: 1.2em;
 }
-.message-body .message-ul .message-li .message-text {
+.message-display .message-ul .message-li .message-text {
   margin: 0;
   color: #3c3333;
 }
-.message-body .message-ul .message-li .message-date {
+.message-display .message-ul .message-li .message-date {
   margin: 0;
   color: rgb(124, 108, 108);
 }
-.message-body #message-data-display {
+.message-display #message-data-display {
   margin-top: 2rem;
   border-top: 1px solid #ddd;
   font-size: 1.1em;
@@ -214,7 +214,7 @@
   text-indent: 1rem;
   text-align: inherit;
 }
-.message-body #message-data-display > *:first-child {
+.message-display #message-data-display > *:first-child {
   margin-top: 2rem;
 }
 
